@@ -1,156 +1,154 @@
 header {
-    width: 100%;
-    height: 40vh;
-    background-image: url(../images/work-header.png);
-    background-size: contain;
-    padding: 100px 200px;
-    position: absolute;
-    top: 0;
-  }
-  
-  header h1 {
-    color: white;
-    font-family: "Limelight", cursive;
-    font-size: 4rem;
-  }
-  
-  /* ------------ work-top ------------ */
-  #work-top {
-    height: 120vh;
-    padding: 45vh 200px;
-    background-color: #e8e8e8;
-  }
-  
-  #work-top .digest {
-    display: flex;
-  }
-  
-  #work-top .problem {
-    width: 600px;
-    height: 500px;
-    padding: 150px 0 0 150px;
-    background-image: url(../images/problem.png);
-    background-size: contain;
-    background-position: center;
-  }
-  
-  #work-top .solution {
-    width: 600px;
-    height: 500px;
-    padding: 150px 0 0 150px;
-  
-    background-image: url(../images/solution.png);
-    background-size: contain;
-    background-position: center;
-  }
-  
-  #work-top .sub-title {
-    font-family: "Limelight", cursive;
-    color: #4987ad;
-  }
-  
-  #work-top h3 {
-    margin-bottom: 20px;
-  }
-  
-  
-  /* ------------ detail-pc ------------ */
-  #detail-pc4 {
-    display: flex;
-    margin-top: 100px;
-  }
-  
-  #detail-pc4 .beforeafter4 {
-    width: 40px;
-    margin-left: 10%;
-    margin-right: 2%;
-  }
-  
-  #detail-pc4 .img img {
-    width: 100%;
-    margin-bottom: 80px;
-  }
-  
-  #detail-pc4 .img img:nth-child(1) {
-    margin-bottom: 500px;
-  }
-  
-  #detail-pc4 .img {
-    width: 36%;
-  }
-  
-  #detail-pc4 .inview5 {
-      margin-top: 400px;
-      height: 0px;
-  }
-
-  #detail-pc4 .inview6 {
-    margin-top: 1200px;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/work-header.png);
+  background-size: contain;
+  padding: 100px 200px;
+  position: absolute;
+  top: 0;
 }
-  
-  #detail-pc4 .right5,
-  #detail-pc4 .right6 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 500px;
-    height: 630px;
-    margin: 100px 100px 0;
-    padding: 0 0 0 100px;
-    background-image: url(../images/detail.png);
-    background-size: cover;
-  
-    opacity: 0;
-    transition: 0.5s;
-  }
-  
-  #detail-pc4 .show {
-    opacity: 1;
-  }
-  
-  #detail-pc4 .before {
-    font-family: "Limelight", cursive;
-    color: #4987AD;
-    font-size: 5rem;
-    margin-bottom: 70px;
-  }
-  
-  #detail-pc4 .after {
-    font-family: "Limelight", cursive;
-    color: #ad4949;
-    font-size: 5rem;
-    margin-bottom: 70px;
-  }
-  
-  #detail-pc4 li {
-    margin-bottom: 5px;
-  }
-  
-  .back-button {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .button {
-    width: 240px;
-    background-color: black;
-    padding: 30px 60px;
-    border-radius: 50px;
-    margin: auto;
-  }
-  
-  /* ------------ footer ------------ */
-  footer {
-    width: 100%;
-    height: 380px;
-    background-image: url(../images/footer.png);
-    background-size: cover;
-  }
-  
-  footer p {
-    padding: 140px 0 0 100px;
-    color: white;
-    font-size: 3rem;
-    font-family: "Limelight", cursive;
-  }
-  
+
+header h1 {
+  color: white;
+  font-family: "Limelight", cursive;
+  font-size: 4rem;
+}
+
+/* ------------ work-top ------------ */
+#work-top5 {
+  height: 120vh;
+  padding: 45vh 200px;
+  background-color: #e8e8e8;
+}
+
+#work-top5 .digest {
+  display: flex;
+}
+
+#work-top5 .problem {
+  width: 600px;
+  height: 500px;
+  padding: 150px 0 0 150px;
+  background-image: url(../images/problem.png);
+  background-size: contain;
+  background-position: center;
+}
+
+#work-top5 .solution {
+  width: 500px;
+  height: 500px;
+  padding: 150px 0 0 150px;
+
+  background-image: url(../images/solution.png);
+  background-size: contain;
+  background-position: center;
+}
+
+#work-top5 .sub-title {
+  font-family: "Limelight", cursive;
+  color: #4987ad;
+}
+
+#work-top5 h3 {
+  margin-bottom: 20px;
+}
+
+/* ------------ detail-pc ------------ */
+#detail-pc4 {
+  display: flex;
+  margin-top: 100px;
+}
+
+#detail-pc4 .beforeafter4 {
+  width: 40px;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+#detail-pc4 .img img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#detail-pc4 .img img:nth-child(1) {
+  margin-bottom: 500px;
+}
+
+#detail-pc4 .img {
+  width: 36%;
+}
+
+#detail-pc4 .inview5 {
+  margin-top: 400px;
+  height: 0px;
+}
+
+#detail-pc4 .inview6 {
+  margin-top: 1200px;
+}
+
+#detail-pc4 .right5,
+#detail-pc4 .right6 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 630px;
+  margin: 100px 100px 0;
+  padding: 0 0 0 100px;
+  background-image: url(../images/detail.png);
+  background-size: cover;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#detail-pc4 .show {
+  opacity: 1;
+}
+
+#detail-pc4 .before {
+  font-family: "Limelight", cursive;
+  color: #4987ad;
+  font-size: 5rem;
+  margin-bottom: 70px;
+}
+
+#detail-pc4 .after {
+  font-family: "Limelight", cursive;
+  color: #ad4949;
+  font-size: 5rem;
+  margin-bottom: 70px;
+}
+
+#detail-pc4 li {
+  margin-bottom: 5px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 240px;
+  background-color: black;
+  padding: 30px 60px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+/* ------------ footer ------------ */
+footer {
+  width: 100%;
+  height: 380px;
+  background-image: url(../images/footer.png);
+  background-size: cover;
+}
+
+footer p {
+  padding: 140px 0 0 100px;
+  color: white;
+  font-size: 3rem;
+  font-family: "Limelight", cursive;
+}
