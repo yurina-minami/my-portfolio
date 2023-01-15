@@ -13,6 +13,17 @@ header {
     font-family: "Limelight", cursive;
     font-size: 4rem;
   }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
   /* ------------ work-top ------------ */
   #work-top4 {
@@ -23,6 +34,8 @@ header {
   
   #work-top4 .digest {
     display: flex;
+    opacity: 0;
+    animation: fadein 1s forwards;
   }
   
   #work-top4 .problem {
