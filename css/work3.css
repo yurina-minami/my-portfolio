@@ -98,7 +98,7 @@ header h1 {
 
 #detail-pc2 .inview5 {
     margin-top: 500px;
-    height: 1800px;
+    height: 1600px;
 }
 
 #detail-pc2 .right5,
@@ -139,6 +139,26 @@ header h1 {
   margin-bottom: 5px;
 }
 
+/* ------------ buttons ------------ */
+.work3buttons {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 50px;
+  gap: 20px;
+}
+
+.work3link {
+  width: 480px;
+  border: solid 2px #4987ad;
+  padding: 20px 40px;
+  border-radius: 50px;
+}
+
+.work3link-button {
+  text-decoration: none;
+  color: #4987ad;
+}
+
 .back-button {
   text-decoration: none;
   color: white;
@@ -149,7 +169,6 @@ header h1 {
   background-color: black;
   padding: 30px 60px;
   border-radius: 50px;
-  margin: auto;
 }
 
 /* ------------ footer ------------ */
