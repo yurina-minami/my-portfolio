@@ -6,7 +6,7 @@ header {
   width: 100%;
   height: 40vh;
   background-image: url(../images/work-header.png);
-  background-size: contain;
+  background-size: cover;
   padding: 100px 200px;
   position: absolute;
   top: 0;
@@ -37,6 +37,8 @@ header h1 {
 }
 
 #work-top .digest {
+  width: 1000px;
+
   display: flex;
   opacity: 0;
   animation: fadein 1s forwards;
