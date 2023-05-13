@@ -71,8 +71,7 @@ main h2 {
   position: fixed;
   z-index: 10;
 
-  display: flex;
-  opacity: 0;
+  display: none;
   transition: 1s;
 }
 
@@ -103,22 +102,14 @@ main h2 {
 }
 
 .nav.active {
-  opacity: 1;
+  display: flex;
 }
 
 /* ------------ top ------------ */
-.phone {
-  background-color: white;
-  position: fixed;
-  padding: 60px 20px;
-  margin: 20px;
-  border-radius: 20px;
-  border: solid 2px black;
-  text-align: center;
-  opacity: 0;
-}
+
 
 #mainvisual {
+  width: 100%;
   height: 100vh;
   background-image: url(../images/top-background.png);
   background-size: cover;
@@ -200,6 +191,7 @@ main h2 {
 
 /* ------------ skills ------------ */
 #skills {
+  width: 100%;
   height: 900px;
   background-image: url(../images/skills-background.png);
   background-size: cover;
@@ -264,6 +256,16 @@ main h2 {
   margin-top: 120px;
 }
 
+#works .work-erea p {
+  margin-bottom: 10px;
+}
+
+#works .morelink {
+  color: black;
+  border: solid 1px black;
+  padding: 10px 30px;
+}
+
 #works .work-img {
   display: flex;
   justify-content: center;
@@ -297,6 +299,7 @@ main h2 {
 footer {
   width: 100%;
   height: 380px;
+  margin-top: 50px;
   background-image: url(../images/footer.png);
   background-size: cover;
 }
@@ -308,8 +311,126 @@ footer p {
   font-family: "Limelight", cursive;
 }
 
+
+
+/*レスポンシブ*/
 @media screen and (max-width: 500px) {
-  .phone {
-    opacity: 1;
+  main h2 {
+    font-size: 5rem;
   }
+
+  /* ------------- hamburger -------------- */
+  .hamburger {
+    top: 2vh;
+    right: 5%;
+  }
+
+  #mainvisual video {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #mainvisual h1 {
+    font-size: 3rem;
+  }
+
+  .nav.active {
+    flex-direction: column;
+  }
+
+  .nav .left {
+    width: 100%;
+    padding: 5vh 10%;
+    font-size: 2rem;
+  }
+  
+  .nav .right {
+    width: 100%;
+    padding: 10vh 20%;
+  }
+
+  /* ------------ who ------------ */
+  #who {
+    height: 1400px;
+  }
+
+  #who .name {
+    width: 15%;
+  }
+
+  #who .photo {
+    display: none;
+  }
+
+  /* ------------ skills ------------ */
+  #skills {
+    height: 850px;
+    padding-top: 100px;
+  }
+
+  #skills img {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+  }
+  
+  #skills h3 {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  #skills h3:nth-child(1) {
+    margin: 0 40px 0 30px;
+  }
+
+  #skills .star {
+    font-size: 0.8rem;
+    gap: 5px;
+    margin: 20px;
+  }
+  
+  #skills .star p:nth-child(2) {
+    margin-right: 20px;
+  }
+  
+  #skills .star p:nth-child(4) {
+    margin-right: 20px;
+  }
+
+  #skills .text {
+    width: 80%;
+    text-align: left;
+    margin-top: 50px;
+  }
+
+  /* ------------ works ------------ */
+  #works .name {
+    width: 15%;
+  }
+
+  #works .works {
+    width: 70%;
+  }
+
+  #works .work-img {
+    flex-direction: column;
+  }
+
+  #works .work-img img {
+    width: 240px;
+    display: block;
+    margin: 20px 0px 0;
+  }
+
+  /* ------------ footer ------------ */
+footer {
+  height: 200px;
+  background-position: top;
+}
+
+footer p {
+  padding: 60px 0 0 30px;
+  font-size: 2rem;
+}
+
 }
