@@ -203,3 +203,125 @@ footer p {
   font-size: 3rem;
   font-family: "Limelight", cursive;
 }
+
+/*レスポンシブ*/
+@media screen and (max-width: 500px) {
+  header {
+    height: 20vh;
+    padding: 20px 40px;
+    background-position: bottom;
+  }
+
+  header h1 {
+    color: white;
+    font-family: "Limelight", cursive;
+    font-size: 4rem;
+  }
+
+  /* ------------ work-top ------------ */
+  #work-top {
+    height: 100vh;
+    padding: 5vh 30px;
+  }
+
+  #work-top .digest {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #work-top .digest ul {
+    font-size: 0.9rem;
+  }
+
+  #work-top .problem {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0 0;
+    background-image: none;
+    background-color: white;
+  }
+
+  #work-top .solution {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0;
+    background-image: none;
+    background-color: white;
+    position: relative;
+  }
+
+  #work-top .solution::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    border: 20px solid transparent;
+    border-bottom: solid 20px white;
+  }
+
+  #detail .right1,
+  #detail .right2,
+  #detail .right3 {
+    display: none;
+  }
+
+  #detail .left {
+    width: 100%;
+    padding: 20px 0 0 20px;
+    margin-bottom: 100px;
+  }
+
+  #detail .before {
+    padding: 5px 60px;
+  }
+
+  #detail .after {
+    padding: 5px 60px;
+  }
+
+  #detail .w1b1 {
+    width: 160px;
+    border: solid 1px lightgray;
+  }
+
+  #detail .w1a1 {
+    width: 160px;
+    height: 2000px;
+    margin-left: 10px;
+    border: solid 1px lightgray;
+  }
+
+  #detail .w1b2 {
+    width: 160px;
+    margin-top: 50px;
+    border: solid 1px lightgray;
+  }
+
+  #detail .w1a2 {
+    width: 160px;
+    margin-left: 10px;
+    margin-top: 50px;
+    border: solid 1px lightgray;
+  }
+
+  #detail .w1a4 {
+    width: 160px;
+    height: 1800px;
+    margin-left: 10px;
+    margin-top: 50px;
+    border: solid 1px lightgray;
+  }
+
+  /* ------------ footer ------------ */
+  footer {
+    height: 200px;
+    background-position: top;
+  }
+
+  footer p {
+    padding: 60px 0 0 30px;
+    font-size: 2rem;
+  }
+}

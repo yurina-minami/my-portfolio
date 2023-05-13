@@ -72,7 +72,6 @@ header h1 {
   margin-bottom: 20px;
 }
 
-
 /* ------------ detail-pc ------------ */
 #detail-pc {
   display: flex;
@@ -120,7 +119,7 @@ header h1 {
 
 #detail-pc .before {
   font-family: "Limelight", cursive;
-  color: #4987AD;
+  color: #4987ad;
   font-size: 5rem;
   margin-bottom: 70px;
 }
@@ -162,4 +161,104 @@ footer p {
   color: white;
   font-size: 3rem;
   font-family: "Limelight", cursive;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 500px) {
+  header {
+    height: 20vh;
+    padding: 20px 40px;
+    background-position: bottom;
+  }
+
+  header h1 {
+    color: white;
+    font-family: "Limelight", cursive;
+    font-size: 4rem;
+  }
+
+  /* ------------ work-top ------------ */
+  #work-top {
+    height: auto;
+    padding: 5vh 30px;
+  }
+
+  #work-top .digest {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #work-top .digest ul {
+    font-size: 0.9rem;
+  }
+
+  #work-top .problem {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0 0;
+    background-image: none;
+    background-color: white;
+  }
+
+  #work-top .solution {
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0;
+    background-image: none;
+    background-color: white;
+    position: relative;
+  }
+
+  #work-top .solution::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    border: 20px solid transparent;
+    border-bottom: solid 20px white;
+  }
+
+  /* ------------ detail-pc ------------ */
+  #detail-pc {
+    margin-top: 60px;
+  }
+
+  #detail-pc .beforeafter {
+    width: 20px;
+    margin-left: 5%;
+    margin-right: 0;
+  }
+
+  #detail-pc .img img {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #detail-pc .img {
+    width: 80%;
+    padding: 20px 0 0 20px;
+    margin-bottom: 0px;
+  }
+
+  #detail-pc .img img:nth-child(2) {
+    margin-bottom: 60px;
+  }
+
+  #detail-pc .right5,
+  #detail-pc .right6 {
+    display: none;
+  }
+
+  /* ------------ footer ------------ */
+  footer {
+    height: 200px;
+    background-position: top;
+  }
+
+  footer p {
+    padding: 60px 0 0 30px;
+    font-size: 2rem;
+  }
 }

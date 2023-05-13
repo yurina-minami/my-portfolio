@@ -3,170 +3,266 @@ body {
 }
 
 header {
-    width: 100%;
-    height: 40vh;
-    background-image: url(../images/work-header.png);
-    background-size: cover;
-    padding: 100px 200px;
-    position: absolute;
-    top: 0;
+  width: 100%;
+  height: 40vh;
+  background-image: url(../images/work-header.png);
+  background-size: cover;
+  padding: 100px 200px;
+  position: absolute;
+  top: 0;
+}
+
+header h1 {
+  color: white;
+  font-family: "Limelight", cursive;
+  font-size: 4rem;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
   }
-  
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------ work-top ------------ */
+#work-top4 {
+  height: 120vh;
+  padding: 45vh 200px;
+  background-color: #e8e8e8;
+}
+
+#work-top4 .digest {
+  width: 1000px;
+
+  display: flex;
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+
+#work-top4 .problem {
+  width: 650px;
+  height: 550px;
+  margin-top: -50px;
+  padding: 180px 0 0 150px;
+  background-image: url(../images/problem.png);
+  background-size: contain;
+  background-position: center;
+}
+
+#work-top4 .solution {
+  width: 550px;
+  height: 450px;
+  padding: 150px 0 0 150px;
+
+  background-image: url(../images/solution.png);
+  background-size: contain;
+  background-position: center;
+}
+
+#work-top4 .sub-title {
+  font-family: "Limelight", cursive;
+  color: #4987ad;
+}
+
+#work-top4 h3 {
+  margin-bottom: 20px;
+}
+
+/* ------------ detail-pc ------------ */
+#detail-pc3 {
+  display: flex;
+  margin-top: 100px;
+}
+
+#detail-pc3 .beforeafter3 {
+  width: 40px;
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+#detail-pc3 .img img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#detail-pc3 .img img:nth-child(1) {
+  margin-bottom: 400px;
+}
+
+#detail-pc3 .img {
+  width: 36%;
+}
+
+#detail-pc3 .inview5 {
+  margin-top: 500px;
+  height: 1400px;
+}
+
+#detail-pc3 .right5,
+#detail-pc3 .right6 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 630px;
+  margin: 100px 100px 0;
+  padding: 0 0 0 100px;
+  background-image: url(../images/detail.png);
+  background-size: cover;
+
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#detail-pc3 .show {
+  opacity: 1;
+}
+
+#detail-pc3 .before {
+  font-family: "Limelight", cursive;
+  color: #4987ad;
+  font-size: 5rem;
+  margin-bottom: 70px;
+}
+
+#detail-pc3 .after {
+  font-family: "Limelight", cursive;
+  color: #ad4949;
+  font-size: 5rem;
+  margin-bottom: 70px;
+}
+
+#detail-pc3 li {
+  margin-bottom: 5px;
+}
+
+.back-button {
+  text-decoration: none;
+  color: white;
+}
+
+.button {
+  width: 240px;
+  background-color: black;
+  padding: 30px 60px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+/* ------------ footer ------------ */
+footer {
+  width: 100%;
+  height: 380px;
+  background-image: url(../images/footer.png);
+  background-size: cover;
+}
+
+footer p {
+  padding: 140px 0 0 100px;
+  color: white;
+  font-size: 3rem;
+  font-family: "Limelight", cursive;
+}
+
+/*レスポンシブ*/
+@media screen and (max-width: 500px) {
+  header {
+    height: 20vh;
+    padding: 20px 40px;
+    background-position: bottom;
+  }
+
   header h1 {
     color: white;
     font-family: "Limelight", cursive;
     font-size: 4rem;
   }
 
-  @keyframes fadein {
-    0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
   /* ------------ work-top ------------ */
   #work-top4 {
-    height: 120vh;
-    padding: 45vh 200px;
-    background-color: #e8e8e8;
+    height: auto;
+    padding: 5vh 30px;
   }
-  
-  #work-top4 .digest {
-    width: 1000px;
 
-    display: flex;
-    opacity: 0;
-    animation: fadein 1s forwards;
+  #work-top4 .digest {
+    width: 100%;
+    flex-direction: column;
   }
-  
+
+  #work-top4 .digest ul {
+    font-size: 0.9rem;
+  }
+
   #work-top4 .problem {
-    width: 650px;
-    height: 550px;
-    margin-top: -50px;
-    padding: 180px 0 0 150px;
-    background-image: url(../images/problem.png);
-    background-size: contain;
-    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0 0;
+    background-image: none;
+    background-color: white;
   }
-  
+
   #work-top4 .solution {
-    width: 550px;
-    height: 450px;
-    padding: 150px 0 0 150px;
-  
-    background-image: url(../images/solution.png);
-    background-size: contain;
-    background-position: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 30px;
+    margin: 40px 0;
+    background-image: none;
+    background-color: white;
+    position: relative;
   }
-  
-  #work-top4 .sub-title {
-    font-family: "Limelight", cursive;
-    color: #4987ad;
+
+  #work-top4 .solution::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    border: 20px solid transparent;
+    border-bottom: solid 20px white;
   }
-  
-  #work-top4 h3 {
-    margin-bottom: 20px;
-  }
-  
-  
+
   /* ------------ detail-pc ------------ */
   #detail-pc3 {
-    display: flex;
-    margin-top: 100px;
+    margin-top: 60px;
   }
-  
+
   #detail-pc3 .beforeafter3 {
-    width: 40px;
-    margin-left: 10%;
-    margin-right: 2%;
+    width: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  
+
   #detail-pc3 .img img {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
-  
+
   #detail-pc3 .img img:nth-child(1) {
-    margin-bottom: 400px;
+    margin-bottom: 60px;
   }
-  
+
   #detail-pc3 .img {
-    width: 36%;
+    width: 80%;
   }
-  
-  #detail-pc3 .inview5 {
-      margin-top: 500px;
-      height: 1400px;
-  }
-  
+
   #detail-pc3 .right5,
   #detail-pc3 .right6 {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 500px;
-    height: 630px;
-    margin: 100px 100px 0;
-    padding: 0 0 0 100px;
-    background-image: url(../images/detail.png);
-    background-size: cover;
-  
-    opacity: 0;
-    transition: 0.5s;
+    display: none;
   }
-  
-  #detail-pc3 .show {
-    opacity: 1;
-  }
-  
-  #detail-pc3 .before {
-    font-family: "Limelight", cursive;
-    color: #4987AD;
-    font-size: 5rem;
-    margin-bottom: 70px;
-  }
-  
-  #detail-pc3 .after {
-    font-family: "Limelight", cursive;
-    color: #ad4949;
-    font-size: 5rem;
-    margin-bottom: 70px;
-  }
-  
-  #detail-pc3 li {
-    margin-bottom: 5px;
-  }
-  
-  .back-button {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .button {
-    width: 240px;
-    background-color: black;
-    padding: 30px 60px;
-    border-radius: 50px;
-    margin: auto;
-  }
-  
+
   /* ------------ footer ------------ */
   footer {
-    width: 100%;
-    height: 380px;
-    background-image: url(../images/footer.png);
-    background-size: cover;
+    height: 200px;
+    background-position: top;
   }
-  
+
   footer p {
-    padding: 140px 0 0 100px;
-    color: white;
-    font-size: 3rem;
-    font-family: "Limelight", cursive;
+    padding: 60px 0 0 30px;
+    font-size: 2rem;
   }
-  
+}
